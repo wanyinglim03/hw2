@@ -6,30 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
+   <div class="mt:p-16 p-4">
     <!-- Heading  -->
-    <h1>Ride into Spring with Lumos Helmet</h1>
-
-    <!-- Slogan -->
-    <h2>Be Seen, Be Safe</h2>
-
-    <p>Traffic crashes are not accidents,
-        but preventable incidents.</p>
-
+    <h1 class="w-1/2 font-bold">Ride into Spring with Lumos Helmet</h1>
+        <div>
+            <!-- Slogan -->
+             <h2 class="w-full text-red-500">Be Seen, Be Safe</h2>
+             <p>Traffic crashes are not accidents, but preventable incidents.</p>
+         </div>
     <!-- Show photo of cyclist wearing Ultra helmet  -->
-    <div>
-        <img src="https://solidsmack.b-cdn.net/wp-content/uploads/2020/07/lumos-helmet-title.jpg"width="800" height="500">
-    </div>
+         <div>
+             <div class="my-16">
+              <img src="https://solidsmack.b-cdn.net/wp-content/uploads/2020/07/lumos-helmet-title.jpg"width="800" height="500">
+            </div>
+          </div>
 
-    <!-- Link to about us page -->
-    <div>
-        <a href="aboutus.html">About Us</a>
-    </div>
+          <!-- Link to about us page -->
+         <div>
+             <div class="text-purple-500">
+              <a href="aboutus.html">About Us</a>
+             </div>
+         </div>
     <!-- Link to products shopping page -->
     <div>
+        <div class="text-red-500">
         <a href="products.html">View products</a>
+        </div>
     </div>
-    
+    <div class="mt:p-16 p-4">
+        <h2 class="w-50 font-bold text-3xl text-center">Sign up for Lumos updates</h2>
+    </div>
+    <form netlify>
+        <label class="block mt-4 font-bold" for="name">Your name</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="name" name="name">
+  
+        <label class="block mt-4 font-bold" for="email">Your email</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="email" name="email">
+            
+        <button class="block mt-4 text-white bg-blue-500 rounded px-4 py-2">Submit form</button>
+      </form>
+
+   </div>
 </body>
 </html>
